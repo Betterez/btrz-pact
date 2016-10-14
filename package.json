@@ -1,0 +1,38 @@
+{
+  "name": "btrz-pact",
+  "version": "0.1.0",
+  "description": "The pact lib for Betterez",
+  "main": "index.js",
+  "scripts": {
+    "test": "NODE_ENV=test multi='xunit=test-results/xunit.xml spec=-' node_modules/istanbul/lib/cli.js cover node_modules/mocha/bin/_mocha -- --ui bdd -R mocha-multi -t 15000 test/*.js",
+    "test-w": "NODE_ENV=test node_modules/mocha/bin/mocha -w test/*.js",
+    "start": "node_modules/forever/bin/forever . -w",
+    "pact-publish": "node pact/publish.js",
+    "pact-verify": "node pact/verify.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Betterez/btrz-pact.git"
+  },
+  "keywords": [
+    "API",
+    "Inventory"
+  ],
+  "author": "Betterez",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Betterez/btrz-pact/issues"
+  },
+  "homepage": "https://github.com/Betterez/btrz-pact",
+  "dependencies": {},
+  "devDependencies": {
+    "@pact-foundation/pact-node": "^4.5.4",
+    "chai": "latest",
+    "chance": "0.7.1",
+    "istanbul": "^0.4.1",
+    "jsinspect": "latest",
+    "mocha": "2.5.3",
+    "mocha-multi": "latest",
+    "sinon": "^1.17.6"
+  }
+}

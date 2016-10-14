@@ -1,0 +1,37 @@
+{
+  "consumer": {
+    "name": "inventory"
+  },
+  "provider": {
+    "name": "accounts"
+  },
+  "interactions": [
+    {
+      "description": "get account info",
+      "request": {
+        "method": "GET",
+        "path": "/accounts/info"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json; charset=utf-8"
+        },
+        "body": {
+          "status": 200,
+          "services": [
+            {
+              "name": "MongoDb",
+              "status": 200
+            }
+           ],
+          "instanceId": "i-28852b3e",
+          "build": "51"
+        }
+      }
+    }
+  ],
+  "metadata": {
+    "pactSpecificationVersion": "1.0.0"
+  }
+}
