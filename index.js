@@ -8,8 +8,8 @@ class BtrzPact {
 			throw new Error("BtrzPact options are mandatory.")
 		}
 		this.pactBroker = options.brokerUrl;
-    this.pactBrokerUsername = options.user;
-    this.pactBrokerPassword = options.pass;
+		this.pactBrokerUsername = options.user;
+		this.pactBrokerPassword = options.pass;
 	}	
 
 	publish(pacts, version, _pactInjection_) {
