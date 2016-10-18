@@ -17,7 +17,7 @@ Publish and Verify the consumer pacts to the Betterez pact_broker
 ## Publish pacts    
     let pactList = ["path/to/pact"]; // or use a folder containing pacts to publish
     let version = "1.0.0";
-    btrzPact.publish(pactList, version, pact)
+    btrzPact.publish(pactList, version)
       .then(() => {
         // do your stuff here...
       })
@@ -28,7 +28,7 @@ Publish and Verify the consumer pacts to the Betterez pact_broker
 ## Verify pacts
     let providerBaseUrl = "host/to/api/endpoint";
     let pactList = ["path/to/pact"]; // or use a folder containing pacts to verify
-    btrzPact.verify(providerBaseUrl, pactList, pact)
+    btrzPact.verify(providerBaseUrl, pactList)
       .then(() => {
           // do your stuff here...
         })
