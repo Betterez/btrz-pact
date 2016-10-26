@@ -6,7 +6,6 @@
   "scripts": {
     "test": "NODE_ENV=test multi='xunit=test-results/xunit.xml spec=-' node_modules/istanbul/lib/cli.js cover node_modules/mocha/bin/_mocha -- --ui bdd -R mocha-multi -t 15000 test/*.js",
     "test-w": "NODE_ENV=test node_modules/mocha/bin/mocha -w test/*.js",
-    "start": "node_modules/forever/bin/forever . -w",
     "pact-publish": "node pact/publish.js",
     "pact-verify": "node pact/verify.js",
     "publish": "publish"
