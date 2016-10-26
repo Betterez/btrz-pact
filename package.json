@@ -8,7 +8,8 @@
     "test-w": "NODE_ENV=test node_modules/mocha/bin/mocha -w test/*.js",
     "start": "node_modules/forever/bin/forever . -w",
     "pact-publish": "node pact/publish.js",
-    "pact-verify": "node pact/verify.js"
+    "pact-verify": "node pact/verify.js",
+    "publish": "publish"
   },
   "repository": {
     "type": "git",
@@ -34,6 +35,7 @@
     "jsinspect": "latest",
     "mocha": "2.5.3",
     "mocha-multi": "latest",
-    "sinon": "^1.17.6"
+    "sinon": "^1.17.6",
+    "publish": "^0.5.0"
   }
 }
